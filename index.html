@@ -91,6 +91,10 @@
                             <br>
                             <input type="button" class="btnwebinar btn--pill btn--webinar" value="Copy the Webinar link" onclick="copy_link()">
                         </div> 
+                        <br>
+                        <div id="Booking" class="font-poppins" style="visibility:hidden;text-align: center;align-content: center;" >
+                            <a href="BookYourSlot.html" class="btn btn--pill btn--reg">Book Your Slot</a><br />
+                        </div>
                         <br>                     
                     </form>
                     <div class="font-poppins"style="text-align: center;align-content: center;">
@@ -331,6 +335,9 @@ function dataupload(){
             document.getElementById("alterid").style.visibility = "visible";
             document.getElementById("alterid").style.backgroundColor = "red";
             document.getElementById("alterspan").innerHTML="Please provide all the Filed" 
+        }
+        if(order == "Yes,I am Looking for Bridal Service"){
+            document.getElementById("Booking").style.visibility = "visible";
         }
         
             
